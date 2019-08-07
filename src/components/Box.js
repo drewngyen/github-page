@@ -28,7 +28,7 @@ export const Box = () => (
       <motion.text
         id="box-title"
         x="10"
-        y="90"
+        y="95"
         variants={box}
         initial="hidden"
         animate="visible"
