@@ -1,5 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
+import BoxStyles from "./styles/BoxStyles";
 
 const box = {
   hidden: {
@@ -15,7 +16,7 @@ const box = {
 };
 
 export const Box = () => (
-  <div className="container">
+  <BoxStyles>
     {/* <div id="hi">drew</div> */}
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +140,7 @@ export const Box = () => (
       </motion.text>
 
       <motion.path
-        d="M0 30 L0 300 H200 300 L300 30 60 30"
+        d="M0 30 L0 310 H200 310 L310 30 60 30"
         variants={box}
         initial="hidden"
         animate="visible"
@@ -149,5 +150,5 @@ export const Box = () => (
         }}
       />
     </motion.svg>
-  </div>
+  </BoxStyles>
 );
