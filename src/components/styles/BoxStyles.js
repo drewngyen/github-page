@@ -11,9 +11,12 @@ const BoxStyles = styled.div`
   border-radius: 30px;
   margin: auto 0;
 
+  h3 {
+    margin: 0px 0px 5px 0px;
+  }
   .item {
     width: 310px;
-    height: 360px;
+    height: 310px;
     overflow: visible;
     stroke: #000;
     stroke-width: 2px;
@@ -22,8 +25,13 @@ const BoxStyles = styled.div`
     display: flex;
   }
 
+  #drag {
+    margin-bottom: 1rem;
+  }
+  #links {
+    margin: 1rem;
+  }
   #drew {
-    background: whitesmoke;
     font-size: 18px;
     font-weight: 400;
     stroke: none;

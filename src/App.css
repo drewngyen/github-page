@@ -1,5 +1,13 @@
 .App {
   text-align: center;
-  background: rgb(230, 222, 222);
+  background: rgb(250, 247, 247);
   place-content: center;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
