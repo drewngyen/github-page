@@ -1,10 +1,10 @@
 import React from "react";
 import CardStyles from "./styles/CardStyles";
 
-const Card = () => {
+const Card = props => {
   return (
     <CardStyles>
-      <div>Card</div>
+      <div className="Content">{props.title}</div>
     </CardStyles>
   );
 };

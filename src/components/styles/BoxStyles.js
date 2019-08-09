@@ -1,17 +1,18 @@
 import styled from "styled-components";
 
 const BoxStyles = styled.div`
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   display: flex;
+  flex-direction: column;
   place-content: center;
   align-items: center;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
+  margin: auto 0;
 
   .item {
-    width: 300px;
+    width: 310px;
     height: 360px;
     overflow: visible;
     stroke: #000;
@@ -22,8 +23,8 @@ const BoxStyles = styled.div`
   }
 
   #drew {
+    background: whitesmoke;
     font-size: 18px;
-
     font-weight: 400;
     stroke: none;
   }

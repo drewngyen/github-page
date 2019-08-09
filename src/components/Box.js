@@ -1,6 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import BoxStyles from "./styles/BoxStyles";
+import Continue from "./Continue";
 
 const box = {
   hidden: {
@@ -20,7 +21,7 @@ export const Box = () => (
     {/* <div id="hi">drew</div> */}
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="300px 300px"
+      // viewBox="300px 300px"
       className="item"
     >
       <text id="drew" x="10" y="37">
@@ -132,7 +133,7 @@ export const Box = () => (
         initial="hidden"
         animate="visible"
         transition={{
-          default: { delay: 80, duration: 3, ease: "easeInOut" },
+          default: { delay: 80, duration: 2, ease: "easeInOut" },
           fill: { duration: 2, ease: [1, 0, 0.8, 1] }
         }}
       >
@@ -150,5 +151,6 @@ export const Box = () => (
         }}
       />
     </motion.svg>
+    <Continue />
   </BoxStyles>
 );
