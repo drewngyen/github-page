@@ -13,12 +13,15 @@ const BoxStyles = styled.div`
 
   h3 {
     margin: 0px 0px 5px 0px;
+    /* color: white; */
+    color: ${props => props.theme.brand};
+    font-size: 1rem;
   }
   .item {
     width: 310px;
     height: 310px;
     overflow: visible;
-    stroke: #000;
+    stroke: ${props => props.theme.brand};
     stroke-width: 2px;
     stroke-linejoin: round;
     stroke-linecap: round;
@@ -35,6 +38,8 @@ const BoxStyles = styled.div`
     font-size: 18px;
     font-weight: 400;
     stroke: none;
+    fill: ${props => props.theme.brand};
+    color: ${props => props.theme.brand};
   }
 
   #box-title {
@@ -42,22 +47,24 @@ const BoxStyles = styled.div`
     font-weight: 600;
     margin: 0 auto;
     stroke: none;
-    fill: black;
+    fill: ${props => props.theme.brand};
+    color: ${props => props.theme.brand};
   }
 
   #box-content {
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 300;
     stroke: none;
-    fill: black;
+    fill: ${props => props.theme.brand};
+    color: ${props => props.theme.brand};
   }
 
   #box-content-last {
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 300;
     font: italic;
     stroke: none;
-    fill: black;
+    fill: ${props => props.theme.brand};
   }
 `;
 

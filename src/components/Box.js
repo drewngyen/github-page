@@ -4,6 +4,11 @@ import BoxStyles from "./styles/BoxStyles";
 import Continue from "./Continue";
 import Link from "./Link";
 
+const theme = {
+  brand: "black",
+  content: "400"
+};
+
 const box = {
   hidden: {
     opacity: 0,
@@ -13,15 +18,16 @@ const box = {
   visible: {
     opacity: 1,
     pathLength: 1,
-    fill: "rgba(255, 255, 255, 0)"
+    fill: "rgba(0, 0, 0, 0)"
   }
 };
+
 const variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 }
 };
 export const Box = () => (
-  <BoxStyles>
+  <BoxStyles theme={theme}>
     <motion.div
       id="drag"
       drag
@@ -180,7 +186,7 @@ export const Box = () => (
         link="https://www.linkedin.com/in/andrew-knguyen/"
         title="LinkedIn"
       />
-      <Link link="https://angel.co/drew-nguyen.co" title="AngelList" />
+      <Link link="https://angel.co/drew-nguyen" title="AngelList" />
       <Link link="https://github.com/drewngyen/" title="GitHub" />
     </motion.div>
     <motion.div

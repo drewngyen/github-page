@@ -8,8 +8,9 @@ const LinkStyle = styled.div`
   a:link,
   a:visited {
     text-decoration: none;
-    color: #bd8e00;
-    font-size: 11px;
+    color: #aa7f00;
+    font-size: 14px;
+    font-weight: 300;
   }
 `;
 
